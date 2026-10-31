@@ -1,0 +1,29 @@
+{
+  "paper": "Rethinking the Comparison Unit in Sequence-Level Reinforcement Learning: An Equal-Length Paired Training Framework from Loss Correction to Sample Construction",
+  "sources": {
+    "verl": {
+      "commit": "59ac716aca467678f21ce63f329c18faf11302e7",
+      "branch": "等长轨迹"
+    },
+    "vllm": {
+      "commit": "7b1d05f26327339d4539bf422fbdc18b69df0058",
+      "branch": "eqlen"
+    }
+  },
+  "local_validation_environment": {
+    "python": "3.12",
+    "torch": "2.13.0+cu130",
+    "cuda": "13.0",
+    "transformers": "5.19.0",
+    "ray": "2.59",
+    "vllm": "0.31.1rc1.dev147+g7914289b7",
+    "flash_attn": "2.8.3",
+    "gpu": "NVIDIA GeForce RTX 4060 Laptop GPU"
+  },
+  "contents": {
+    "verl": "Source snapshot with the upstream repository structure, EqLen recipe and required paper helpers preserved; internal artifacts and unrelated local paper recipes archived separately.",
+    "vllm": "Source snapshot with upstream documentation, tests, examples, Docker, CI, development configuration, runtime packages and native build inputs preserved.",
+    "development_materials": "Local ORTG outlines, historical validation records, internal helpers and unrelated local paper recipes archived outside the upload tree."
+  },
+  "paper_benchmarks": "not rerun as part of the tiny synthetic GPU smoke tests; model checkpoints and benchmark datasets are not bundled."
+}
